@@ -1,6 +1,4 @@
-# ITMD 521 Spring 2018
 
-## Week 5 assignment
 
 ### Part I
 
