@@ -1,0 +1,8 @@
+hadoop jar mtred-50.jar MaxTemperatureRed /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-1
+hadoop jar mtred-50.jar MaxTemperatureWithCombinerRed /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-2
+hadoop jar mtred-50.jar MaxTemperatureRed2 /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-3
+hadoop jar mtred-50.jar MaxTemperatureWithCombinerRed2 /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-4
+hadoop jar mtred-50.jar MaxTemperatureRed4 /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-5
+hadoop jar mtred-50.jar MaxTemperatureWithCombinerRe4 /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-6
+hadoop jar mtred-50.jar MaxTemperatureRed8 /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-7
+hadoop jar mtred-50.jar MaxTemperatureWithCombinerRed8 /user/controller/ncdc/50/50.txt /output/pshukla/week-12/3/compress-50-8
