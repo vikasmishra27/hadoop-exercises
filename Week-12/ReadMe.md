@@ -1,6 +1,4 @@
-# ITMD 521 Spring 2018
 
-## Week 12 assignment
 
 ### Objectives 
 
