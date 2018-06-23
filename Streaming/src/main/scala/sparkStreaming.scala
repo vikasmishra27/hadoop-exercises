@@ -5,9 +5,6 @@ import kafka.serializer.StringDecoder
 
 object sparkStreaming{
   def main(args : Array[String]) : Unit ={
-    //println("Hello World")
-
-
     val conf = new SparkConf().setAppName("Demo Streaming Application").setMaster(args(0))
     val ssc = new StreamingContext(conf,Seconds(20))
     val kafkaParams = Map[String,String]("metadata.broker.list"->"nn01.itversity.com:6667,nn02.itversity.com:6667,rm01.itversity.com:6667")
@@ -25,11 +22,9 @@ object sparkStreaming{
       })
     val departmentTraffic = departments.
       reduceByKey((total, value) => total + value)
-    departmentTraffic.saveAsTextFiles("/user/vikasm415/deptwisetraffic/cnt")
+    departmentTraffic.saveAsTextFiles(args(1))
 
     ssc.start()
     ssc.awaitTermination()
-
-
   }
 }
